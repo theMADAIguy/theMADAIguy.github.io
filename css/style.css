@@ -12,6 +12,37 @@ p{
 	margin:0;
 	font-size:14px;
 }
+
+nh1 {
+    display: block;
+    border-bottom: solid 1px #6B1E69;
+    position: relative;
+    width: 450px;
+    color: #6B1E69;
+}
+nh1:after {
+    content: '';
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    border-bottom: solid 3px #6B1E69;
+    margin-bottom: -5px;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+nh1:before {
+    content: '\f18c';
+    font-family: fontAwesome;
+    height: 25px;
+    position: absolute;
+    margin-bottom: -10px;
+    bottom: 0;
+    right: -30px;
+    text-align: right;
+}
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Oswald', sans-serif;
 	font-weight:100;
