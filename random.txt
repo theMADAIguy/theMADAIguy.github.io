@@ -1,0 +1,447 @@
+
+        
+        
+        
+<!--             <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://themadaiguy.github.io/">
+                <papertitle></papertitle>
+              </a>
+              <br>
+              <br>
+              <em>AAAI Student Abstract and Poster</em>, 2019
+              <br>
+              <a href="https://themadaiguy.github.io/">Paper</a>
+              <br>
+              <p>We use contextual information embedded in the form of historical activities of users and homophily networks formed between like-minded individuals on Twitter for improving existing techniques for automated identification of suicidal tweets.</p> -->
+				</p>
+            </td>
+          </tr>
+          </li>
+            
+          
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+<!--             <td style="padding:20px;width:15%;vertical-align:left">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/qna.png'></div>
+                <img src='images/qna.png'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td> -->
+            <li>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://themadaiguy.github.io/">
+                <papertitle>ESAS: Towards Practical and Explainable Short Answer Scoring</papertitle>
+              </a>
+              <br>
+              Palak Goenka, Mehak Piplani, Ramit Sawhney, <b>Puneet Mathur</b> and Rajiv Ratn Shah
+              <br>
+              <em>AAAI Student Abstract and Poster</em>, 2019
+              <br>
+              <a href="https://themadaiguy.github.io/">Paper</a>
+              <br>
+              <p>We present an approach for Short Answer Scoring that uses ensembling methods over domain agnostic and context-specific features.</p>
+            </td>
+          </tr>
+            </li>
+          
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+<!--             <td style="padding:20px;width:15%;vertical-align:left">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/hindi_english.png'></div>
+                <img src='images/hindi_english.png'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td> -->
+            <li>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://themadaiguy.github.io/">
+                <papertitle>Hindi-English Hate Speech Detection: Author Profiling, Debiasing and Practical Perspectives</papertitle>
+              </a>
+              <br>
+              Shivang Chopra, Ramit Sawhney, Puneet Mathur and Rajiv Ratn Shah
+              <br>
+              <em>AAAI Student Abstract and Poster</em>, 2019
+              <br>
+              <a href="https://themadaiguy.github.io/">Paper</a>
+              <br>
+              <p> We propose a three-tier pipeline that employs deep graph embeddings, community profiling and a  semi-supervised  expert-in-the-loop debiasing algorithm for hate speech detection modeling.</p>
+            </td>
+          </tr>
+          </li>
+          
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+<!--             <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/uber.jpg'></div>
+                <img src='images/uber.jpg'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td> -->
+            <li>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://themadaiguy.github.io/">
+                <papertitle>An Iterative Approach for Identifying Complaint Based Tweets in Social Media Platforms</papertitle>
+              </a>
+              <br>
+              Gyanesh Anand, Aakash Kumar Gautam, Puneet Mathur, Debanjan Mahata, Rajiv Ratn Shah and Ramit Sawhney
+              <br>
+              <em>AAAI Student Abstract and Poster</em>, 2019
+              <br>
+              <a href="https://themadaiguy.github.io/">Paper</a>
+              <br>
+              <p>We developed a domain-specific semi-supervised methodology for identifying transport related complaints on Twitter</p>
+            </td>
+          </tr>
+        </li>
+          
+          
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/graphs.jpg'></div>
+                <img src='images/graphs.jpg'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.aclweb.org/anthology/N19-3019.pdf">
+                <papertitle>SNAP-BATNET: Cascading Author Profiling and Social Network Graphs for Suicide Ideation Detection on Social Media</papertitle>
+              </a>
+              <br>
+              Rohan Mishra, Pradyumn Prakhar Sinha, Ramit Sawhney, Debanjan Mahata, Puneet Mathur, Rajiv Ratn Shah
+              <br>
+              <em>NAACL SRW</em>, 2019
+              <br>
+              <a href="https://www.aclweb.org/anthology/N19-3019.pdf">Paper</a>
+              <br>
+              <p>Designed a deep learning based feature stacking approach to extract textual features, historical author profiling and graph embeddings to detect suicidal intent in tweets with a highly desirable recall of 0.96.</p>
+            </td>
+          </tr>
+          
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/metoo.jpg'></div>
+                <img src='images/metoo.jpg'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.aclweb.org/anthology/N19-3018.pdf">
+                <papertitle>Speak Up, Fight Back! Detection of Social Media Disclosures of Sexual Harassment</papertitle>
+              </a>
+              <br>
+              Arijit Ghosh Chowdhury, Ramit Sawhney, Puneet Mathur, Debanjan Mahata, Rajiv Ratn Shah
+              <br>
+              <em>NAACL SRW</em>, 2019
+              <br>
+              <a href="https://www.aclweb.org/anthology/N19-3018.pdf">Paper</a>
+              <br>
+              <p>Experimented with several deep learning based models such as CNN, RNN, GRU, Bi-LSTM for detecting social media disclosures of sexual harassment. Used ULMFiT based Disclosure Language Model to show that augmenting the training data with additional domain-specific data achieves superior tweet classification.</p>
+            </td>
+          </tr>
+          
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/kidney.jpg'></div>
+                <img src='images/kidney.jpg'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/8658665/">
+                <papertitle>Exploring Classification of Histological Disease Biomarkers from Renal Biopsy Images</papertitle>
+              </a>
+              <br>
+              Puneet Mathur, Meghna P. Ayyar, Rajiv Ratn Shah and Shree G Sharma
+              <br>
+              <em>WACV</em>, 2019
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/8658665/">Paper</a>
+              <br>
+              <p>Developed a novel Multi-Gaze Attention Network (MGANet) model that gives an accuracy of 87.25% and 81.47% for glomeruli and fibrosis classification.</p>
+            </td>
+          </tr>
+          
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/kidney2.jpg'></div>
+                <img src='images/kidney2.jpg'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/8603252">
+                <papertitle>Harnessing AI for Kidney Glomeruli Classification</papertitle>
+              </a>
+              <br>
+              Meghna P. Ayyar*,Puneet Mathur*, Rajiv Ratn Shah and Shree G Sharma
+              <br>
+              <em>IEEE International Symposium on Multimedia (ISM)</em>, 2019
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/8603252">Paper</a>
+              <br>
+              <p>Studied computer vision techniques to identify diseased kidney tissues using transfer learning, supervised feature extraction and self-attention based CNN architectures.</p>
+            </td>
+          </tr>
+          
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/blood.jpg'></div>
+                <img src='images/blood.jpg'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.aclweb.org/anthology/W18-5907/">
+                <papertitle>Identification of Emergency Blood Donation Request on Twitter</papertitle>
+              </a>
+              <br>
+              Puneet Mathur, Meghna Ayyar, Sahil Chopra, Simra Shahid, Laiba Mehnaz and Rajiv Shah
+              <br>
+              <em>Social Media Mining for Health Applications Workshop (SMM4H), EMNLP</em>, 2018
+              <br>
+              <a href="https://www.aclweb.org/anthology/W18-5907/">Paper</a>
+              <br>
+              <p>Classified tweets referring to the necessity of urgent blood donation requirement using linguistic feature-based SVM classification technique with an accuracy of 97.89.</p>
+            </td>
+          </tr>
+          
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/hindi_english2.jpg'></div>
+                <img src='images/hindi_english2.jpg'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/1910.11336">
+                <papertitle>Did You Offend Me? Classification of Offensive Tweets in Hinglish Language</papertitle>
+              </a>
+              <br>
+              Puneet Mathur, Ramit Sawhney, Meghna Ayyar and Rajiv Shah
+              <br>
+              <em>Abusive Language Workshop (ALW2), EMNLP</em>, 2018
+              <br>
+              <a href="https://www.aclweb.org/anthology/W18-6223/">Paper</a>
+              <br>
+              <p>Developed a hybrid CNN-LSTM model to outperform supervised machine learning models like SVM, Decision Trees, Naive Bayes trained on TF-IDF, Bag of Words and N-gram features by 17%.</p>
+            </td>
+          </tr>
+          
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/suicide.jpg'></div>
+                <img src='images/suicide.jpg'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.aclweb.org/anthology/W18-6223.pdf">
+                <papertitle>Exploring and Learning Suicidal Ideation Connotations on Social Media with Deep Learning</papertitle>
+              </a>
+              <br>
+              Ramit Sawhney, Prachi Manchanda, Puneet Mathur, Rajiv Shah and Raj Singh
+              <br>
+              <em>WASSA, EMNLP</em>, 2019
+              <br>
+              <a href="https://www.aclweb.org/anthology/W18-6223.pdf">Paper</a>
+              <br>
+              <p>Exploring deep learning architectures to build an accurate and robust model for suicidal ideation detection.</p>
+            </td>
+          </tr>
+          
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/hindi_english3.jpg'></div>
+                <img src='images/hindi_english3.jpg'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.aclweb.org/anthology/W18-3504/">
+                <papertitle>Detecting Offensive Tweets in Hindi-English Code-Switched Language</papertitle>
+              </a>
+              <br>
+              Gyanesh Anand, Aakash Kumar Gautam, Puneet Mathur, Debanjan Mahata, Rajiv Ratn Shah and Ramit Sawhney
+              <br>
+              <em>Workshop on Natural Language Processing for Social Media (Social NLP), ACL</em>, 2018
+              <br>
+              <a href="https://www.aclweb.org/anthology/W18-3504/">Paper</a>
+              <br>
+              <p>Explored cross-lingual transfer learning to detect hate speech in multi-lingual social media posts.</p>
+            </td>
+          </tr>
+          
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/firefly.jpg'></div>
+                <img src='images/firefly.jpg'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://link.springer.com/chapter/10.1007/978-3-319-95162-1_30">
+                <papertitle>A Firefly Algorithm Based Wrapper-Penalty Feature Selection Method for Cancer Diagnosis</papertitle>
+              </a>
+              <br>
+              Ramit Sawhney, Puneet Mathur and Ravi Shankar
+              <br>
+              <em>International Conference on Computational Science and Its Applications (ICCSA) </em>, 2018
+              <br>
+              <a href="https://link.springer.com/chapter/10.1007/978-3-319-95162-1_30">Paper</a>
+              <br>
+              <p>Developed a swarm intelligence based feature selection method to select the most optimal feature set using a Random Forest classifier. The proposed method helped to reduce 80% of redundant features.</p>
+            </td>
+          </tr>
+          
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/gravity.jpg'></div>
+                <img src='images/gravity.jpg'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/8550983">
+                <papertitle>Feature Selection for Cryotherapy and Immunotherapy Treatment Methods Based on Gravitational Search Algorithm</papertitle>
+              </a>
+              <br>
+              Roopal Jain, Ramit Sawhney and Puneet Mathur
+              <br>
+              <em>International Conference on Current Trends towards Converging Technologies (ICCTCT) 2018</em>, 2019
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/8550983">Paper</a>
+              <br>
+              <p>A comprehensive review of Binary Gravitational Search algorithm on Immunotherapy and Cryotherapy datasets for warts treatment using Random Forest Classifier to predict the response of the treatment.</p>
+            </td>
+          </tr>
+           -->
+          
+          
+        
