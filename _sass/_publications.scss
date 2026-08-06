@@ -1,0 +1,76 @@
+/**
+ * Publication list styling
+ */
+.pub-list {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: $spacing-unit;
+
+    li {
+        margin-bottom: $spacing-unit / 1.5;
+        padding-left: 0;
+    }
+}
+
+.pub-title {
+    display: block;
+    font-weight: 400;
+}
+
+.pub-authors {
+    display: block;
+    color: $text-color;
+
+    i, em {
+        font-style: italic;
+    }
+}
+
+.pub-links {
+    display: block;
+}
+
+.pub-venue {
+    display: block;
+    font-weight: 600;
+    color: $text-color;
+}
+
+.pub-flag {
+    font-weight: 600;
+    color: #c0392b;
+}
+
+.pub-soon {
+    font-style: italic;
+    color: $grey-color;
+    font-weight: 400;
+}
+
+.updates-table {
+    height: 320px;
+    overflow: auto;
+    border: 1px solid $grey-color-light;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-bottom: $spacing-unit;
+
+    table col:first-child {
+        width: 110px;
+    }
+}
+
+.home-photo {
+    float: right;
+    width: 34%;
+    max-width: 220px;
+    padding: 6px 0 6px 24px;
+
+    @include media-query($on-palm) {
+        float: none;
+        width: 50%;
+        display: block;
+        margin: 0 auto $spacing-unit / 2;
+        padding: 0;
+    }
+}

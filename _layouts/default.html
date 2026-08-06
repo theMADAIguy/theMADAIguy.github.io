@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    {% include head.html %}
+    {% seo %}
+    {% if page.image %}
+      <meta content="{{ page.image }}" property="og:image" />
+    {% else %}
+      <meta content="{{ site.url }}/assets/me.jpeg" property="og:image" />
+    {% endif %}
+  </head>
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </body>
+
+</html>

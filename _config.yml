@@ -1,0 +1,25 @@
+# Site settings
+title: Puneet Mathur
+full_name: Puneet Mathur
+email: pmathur3k6@gmail.com
+email2: puneetm@umd.edu
+description: > # this means to ignore newlines until "baseurl:"
+  Research Scientist at Adobe Research working on agentic AI, audio language modeling
+  and full-duplex speech systems, and multimodal document intelligence.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://themadaiguy.github.io" # the base hostname & protocol for your site
+github_username: pmathur5k10
+linkedin_username: puneetmathurumd
+scholar_url: "https://scholar.google.co.in/citations?user=Zb4-A0AAAAAJ&hl=en"
+include: ['_pages']
+exclude: ['legacy', 'README.md', 'Gemfile', 'Gemfile.lock', 'vendor']
+permalink: /blog/:year/:month/:day/:title/
+
+# Build settings
+markdown: kramdown
+# The github-pages gem defaults to "jekyll-theme-primer" and injects its own
+# assets/layouts if no theme is set. We ship a fully custom design, so disable it.
+theme: null
+plugins:
+  - jekyll-seo-tag
+  - jekyll-redirect-from
