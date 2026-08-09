@@ -1,0 +1,39 @@
+// ---- appended for blog posts ----
+
+.post-list {
+  list-style: none;
+  padding-left: 0;
+
+  li { margin-bottom: 1.4rem; }
+
+  .post-date {
+    display: block;
+    font-size: 0.85rem;
+    opacity: 0.65;
+  }
+
+  .post-excerpt {
+    margin: 0.35rem 0 0;
+    font-size: 0.92rem;
+    opacity: 0.8;
+  }
+}
+
+// The Part 5 comparison table is 6 columns wide; let it scroll on mobile
+// instead of blowing out the page width.
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0;
+
+  table { min-width: 40rem; }
+}
+
+// Figures: full-width images with a centred caption.
+// The caption is the italic line immediately after each image.
+p > img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto 0.5rem;
+}
