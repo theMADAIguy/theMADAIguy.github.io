@@ -1,7 +1,6 @@
 # theMADAIguy.github.io
 
-Personal academic site for Puneet Mathur, built as a Jekyll site (structure adapted from
-[sreyan88.github.io](https://github.com/Sreyan88/sreyan88.github.io), MIT licensed).
+Personal academic site for Puneet Mathur.
 
 ## Structure
 
