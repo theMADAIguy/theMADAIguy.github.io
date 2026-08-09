@@ -4,11 +4,9 @@
   <head>
     {% include head.html %}
     {% seo %}
-    {% if page.image %}
-      <meta content="{{ page.image }}" property="og:image" />
-    {% else %}
-      <meta content="{{ site.url }}/assets/me.jpeg" property="og:image" />
-    {% endif %}
+    {% unless page.image %}
+    <meta property="og:image" content="{{ site.url }}/assets/me.jpeg" />
+    {% endunless %}
   </head>
 
   <body>

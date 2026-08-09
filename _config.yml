@@ -11,6 +11,7 @@ url: "https://themadaiguy.github.io" # the base hostname & protocol for your sit
 github_username: pmathur5k10
 linkedin_username: puneetmathurumd
 scholar_url: "https://scholar.google.co.in/citations?user=Zb4-A0AAAAAJ&hl=en"
+logo: /assets/me.jpeg # fallback social-preview image for jekyll-seo-tag when a page has no `image:` of its own
 include: ['_pages']
 exclude: ['legacy', 'README.md', 'Gemfile', 'Gemfile.lock', 'vendor']
 permalink: /blog/:year/:month/:day/:title/
