@@ -21,6 +21,7 @@ I maintain a full list of my publications on the [Research]({{ site.baseurl }}/r
 <table>
 <col>
 <col>
+<tr><td><b>Aug 2026:</b></td><td>New blog post: <a href="{{ site.baseurl }}/blog/2026/08/09/full-duplex-explained/">How Full-Duplex Audio Models Actually Work</a>.</td></tr>
 <tr><td><b>2026:</b></td><td>Started new research on audio language modeling and full-duplex speech systems.</td></tr>
 <tr><td><b>2026:</b></td><td><a href="https://arxiv.org/abs/2511.08798" target="_blank">ARGUS: Structured Uncertainty Guided Clarification for LLM Agents</a> accepted to ACL 2026.</td></tr>
 <tr><td><b>Nov 2025:</b></td><td>Co-organized the RARA Workshop (Grounding Documents with Reasoning, Agents, Retrieval, and Attribution) at ICDM 2025.</td></tr>
