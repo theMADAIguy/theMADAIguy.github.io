@@ -2,7 +2,7 @@
 layout: page
 title: "How Audio Becomes Tokens"
 description: "Codecs, RVQ and the Mimi tokenizer, explained from first principles: how a 24 kHz waveform and a stream of words end up as integers on the same 12.5 Hz clock."
-date: 2026-08-16
+date: 2026-08-10
 image: /assets/blog/tokenization/fig2.png
 ---
 
