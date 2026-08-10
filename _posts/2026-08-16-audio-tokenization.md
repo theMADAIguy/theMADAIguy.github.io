@@ -3,7 +3,7 @@ layout: page
 title: "How Audio Becomes Tokens"
 description: "Codecs, RVQ and the Mimi tokenizer, explained from first principles: how a 24 kHz waveform and a stream of words end up as integers on the same 12.5 Hz clock."
 date: 2026-08-16
-image: /assets/blog/tokenization/fig2.png
+image: /assets/blog/tokenization/fig2.pdf
 ---
 
 *Part two. Last time I explained why full-duplex models predict the next 80 milliseconds of their own audio stream. My friend's follow-up was the right one: "okay, but what IS 80 milliseconds of audio to a transformer?"*
@@ -129,7 +129,7 @@ Two families, two kinds of token, and around 2022 people trying to build speech 
 
 **Mimi** (2024), the codec inside Moshi, takes that and adds what full-duplex specifically needs: fully streaming operation, a frame rate chosen to sit near text, and a structural fix to a problem SpeechTokenizer's approach creates. That's Part 7.
 
-![A timeline from 1939 to 2024 with two parallel tracks. The upper compression track runs through the Vocoder, linear predictive coding, WaveNet, VQ-VAE, SoundStream and EnCodec, producing acoustic tokens. The lower understanding track begins around 2020 with wav2vec 2.0, HuBERT and WavLM, producing semantic tokens. The tracks converge at AudioLM, then SpeechTokenizer, then Mimi.](/assets/blog/tokenization/fig2.png)
+![A timeline from 1939 to 2024 with two parallel tracks. The upper compression track runs through the Vocoder, linear predictive coding, WaveNet, VQ-VAE, SoundStream and EnCodec, producing acoustic tokens. The lower understanding track begins around 2020 with wav2vec 2.0, HuBERT and WavLM, producing semantic tokens. The tracks converge at AudioLM, then SpeechTokenizer, then Mimi.](/assets/blog/tokenization/fig2.pdf)
 
 *Figure 2 - Two research lineages, converging. Compression wanted fidelity; understanding wanted meaning.*
 
