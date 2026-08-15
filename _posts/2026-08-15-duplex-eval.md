@@ -51,6 +51,8 @@ That's why the obvious engineering answer doesn't work. A voice activity detecto
 
 It's also why the obvious *evaluation* answer doesn't work. Every one of those four events is defined by **timing, not content**. WER, MOS, an LLM judging a transcript — all of them score a finished turn. The transcript of a botched barge-in and a clean one can be the *same string*.
 
+One more distinction worth having, because papers assume it: *pseudo*-full-duplex systems time-slice between listening and speaking fast enough to look simultaneous, while *true* full-duplex systems genuinely do both at once [2]. Only the second kind can react to you mid-word.
+
 Which leaves us stuck. If you can't score the artifact, you have to score the interaction. And an interaction needs two participants.
 
 ---
@@ -162,7 +164,7 @@ Voice Showdown is the first real preference arena for voice: 60+ languages, 11 f
 
 It surfaces things no automated benchmark structurally can. Multilingual ability is the single biggest differentiator between models. GPT Realtime answers **in English to non-English prompts about 20% of the time** — including Hindi, Spanish and Turkish. And within one model, the best voice wins **30 percentage points** more often than the worst, which means voice selection reorders rankings.
 
-**And here's the punchline: Voice Showdown is turn-based.** Scale says full-duplex preference evaluation is coming next. As of today, the paradigm that anchors all of text evaluation has **no full-duplex equivalent in production.**
+**And here's the punchline: Voice Showdown is turn-based.** Scale says full-duplex preference evaluation is coming next. S2S-Arena [18] brought Bradley-Terry pairwise ranking to speech-to-speech, but that too is turn-based. As of today, the paradigm that anchors all of text evaluation has **no full-duplex equivalent in production.**
 
 ### The one that doesn't fit the ladder
 
@@ -182,7 +184,7 @@ So: you've picked a rung, you've picked a judge. Now you need numbers — and th
 |---|---|---|
 | **TOR** (Takeover Rate) | How often the model grabs the floor in a window | Value depends entirely on the window, and papers define it differently |
 | **Latency** | See below | At least five different quantities share this name |
-| **JSD vs. human timing** | Aggregate rhythm | Says nothing about any individual moment |
+| **JSD vs. human timing** | Aggregate rhythm, descended from dGSLM [1] | Says nothing about any individual moment |
 | **Backchannel frequency** | How often, not how well | Constant random backchanneling scores well |
 | **LLM-as-judge** | Post-interruption quality | Softest number in every paper that uses it |
 | **pass@k vs. pass^k** | Peak vs. *reliable* capability | EVA-Bench median gap: **0.44** |
@@ -250,19 +252,63 @@ That's the benchmark I want to see next.
 
 ## References
 
-**Foundations** — [1] Nguyen, T. A., et al. (2023). **Generative Spoken Dialogue Language Modeling (dGSLM).** *TACL* 11:250–266. arXiv:2203.16502. · [2] Chen, Y., & Yu, H. (2025). **From Turn-Taking to Synchronous Dialogue: A Survey of Full-Duplex Spoken Language Models.** arXiv:2509.14515.
+**Foundations**
 
-**Full-Duplex-Bench line** — [3] Lin, G.-T., Lian, J., Li, T., Wang, Q., Anumanchipalli, G., Liu, A. H., & Lee, H.-y. (2025). **Full-Duplex-Bench.** arXiv:2503.04721. · [4] Lin, G.-T., Kuan, S.-Y. S., Wang, Q., Lian, J., Li, T., Watanabe, S., & Lee, H.-y. (2025). **Full-Duplex-Bench v1.5: Evaluating Overlap Handling.** ICASSP 2026. arXiv:2507.23159. · [5] Lin, G.-T., Kuan, S.-Y. S., Shi, J., Chang, K.-W., Arora, S., Watanabe, S., & Lee, H.-y. (2026). **Full-Duplex-Bench-v2.** ACL 2026. arXiv:2510.07838. · [6] Lin, G.-T., Chen, C., Chen, Z., & Lee, H.-y. (2026). **Full-Duplex-Bench-v3.** arXiv:2604.04847. · Code: https://github.com/DanielLin94144/Full-Duplex-Bench
+**[1]** Nguyen, T. A., Kharitonov, E., Copet, J., Adi, Y., Hsu, W.-N., Elkahky, A., et al. (2023). [Generative Spoken Dialogue Language Modeling (dGSLM)](https://arxiv.org/abs/2203.16502). *Transactions of the ACL*, 11:250–266. arXiv:2203.16502. — origin of the corpus-level turn-taking statistics everything here descends from.
 
-**Multi-round and scenario** — [7] Peng, Y., Chao, Y.-W., Ng, D., Ma, Y., Ni, C., Ma, B., & Chng, E. S. (2025). **FD-Bench.** arXiv:2507.19040. · [8] Zhang, H., Cui, W., Xu, H., Li, X.-H., Zhu, L., Bai, H., Ma, S., & King, I. (2026). **MTR-DuplexBench.** *Findings of ACL 2026*, 5334–5351. arXiv:2511.10262. · [9] Ge, Y., Chen, S., Xiao, J., Liu, X., Xiao, T., et al. (2025). **FLEXI.** arXiv:2509.22243. · [10] Modi, S. N., Mahajan, G., Wetter, M., & Welles, R. (2026). **EchoChain.** arXiv:2604.16456.
+**[2]** Chen, Y., & Yu, H. (2025). [From Turn-Taking to Synchronous Dialogue: A Survey of Full-Duplex Spoken Language Models](https://arxiv.org/abs/2509.14515). arXiv:2509.14515. — source of the pseudo- vs. true-full-duplex distinction.
 
-**Task-grounded** — [11] Ray, S., Dhandhania, K., Barres, V., & Narasimhan, K. (2026). **τ-Voice.** arXiv:2603.13686. · Code: https://github.com/sierra-research/tau2-bench · [12] Bogavelli, T., Gauthier Melançon, G., Stankiewicz, K., Bamgbose, O., Riols, F., et al. (2026). **EVA-Bench.** ServiceNow. arXiv:2605.13841.
+**The Full-Duplex-Bench line**
 
-**Timing, instructions, judges** — [13] Arora, S., Lu, Z., Chiu, C.-C., Pang, R., & Watanabe, S. (2025). **Talking Turns.** ICLR 2025. arXiv:2503.01174. · [14] Chang, K.-W., Hu, E.-P., Kuan, C.-Y., Ren, W., Chen, W.-C., Lin, G.-T., Tsao, Y., Sun, S.-H., Lee, H.-y., & Glass, J. (2026). **Game-Time.** ICASSP 2026, 16302–16306. arXiv:2509.26388. · [15] Tang, Y., Ma, W., Zhao, X., et al. (2026). **Instruct-FD.** Boson AI. arXiv:2607.20460.
+**[3]** Lin, G.-T., Lian, J., Li, T., Wang, Q., Anumanchipalli, G., Liu, A. H., & Lee, H.-y. (2025). [Full-Duplex-Bench: A Benchmark to Evaluate Full-duplex Spoken Dialogue Models on Turn-taking Capabilities](https://arxiv.org/abs/2503.04721). arXiv:2503.04721.
 
-**Human data and preference** — [16] Wang et al. (2026). **Full-Duplex Interaction in Spoken Dialogue Systems: ICASSP 2026 HumDial Challenge.** arXiv:2604.21406. · Data: https://github.com/ASLP-lab/HumDial-FDBench *[full author list unverified — complete before publishing]* · [17] Gu, J., Gosai, A., & Siegel, M. (2026). **Voice Showdown: The First Arena for Voice AI.** Scale AI. https://scale.com/blog/voice-showdown · [18] Jiang, F., Lin, Z., Bu, F., Du, Y., Wang, B., & Li, H. (2025). **S2S-Arena.** arXiv:2503.05085.
+**[4]** Lin, G.-T., Kuan, S.-Y. S., Wang, Q., Lian, J., Li, T., Watanabe, S., & Lee, H.-y. (2025). [Full-Duplex-Bench v1.5: Evaluating Overlap Handling for Full-Duplex Speech Models](https://arxiv.org/abs/2507.23159). ICASSP 2026. arXiv:2507.23159.
 
-**Outside audio** — [19] Wang, Y., Wang, Y., Chen, B., Wu, T., Zhao, D., & Zheng, Z. (2025). **OmniMMI.** CVPR 2025. arXiv:2503.22952. · [20] Hong, J., Yan, S., Cai, J., Jiang, X., Hu, Y., & Xie, W. (2025). **WorldSense.** arXiv:2502.04326. · [21] Song, Z., Jiang, Q., Cui, M., Li, M., Gao, L., et al. (2026). **AJailBench.** ACL 2026, 27294–27308. arXiv:2505.15406. · [22] Peng, Z., Liu, Y., Sun, Z., Li, M., Luo, Z., et al. (2026). **JALMBench.** ICLR 2026. arXiv:2505.17568.
+**[5]** Lin, G.-T., Kuan, S.-Y. S., Shi, J., Chang, K.-W., Arora, S., Watanabe, S., & Lee, H.-y. (2026). [Full-Duplex-Bench-v2: A Multi-Turn Evaluation Framework for Duplex Dialogue Systems with an Automated Examiner](https://arxiv.org/abs/2510.07838). ACL 2026. arXiv:2510.07838.
+
+**[6]** Lin, G.-T., Chen, C., Chen, Z., & Lee, H.-y. (2026). [Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency](https://arxiv.org/abs/2604.04847). arXiv:2604.04847. — code for all four versions: [github.com/DanielLin94144/Full-Duplex-Bench](https://github.com/DanielLin94144/Full-Duplex-Bench).
+
+**Multi-round and scenario benchmarks**
+
+**[7]** Peng, Y., Chao, Y.-W., Ng, D., Ma, Y., Ni, C., Ma, B., & Chng, E. S. (2025). [FD-Bench: A Full-Duplex Benchmarking Pipeline Designed for Full Duplex Spoken Dialogue Systems](https://arxiv.org/abs/2507.19040). arXiv:2507.19040.
+
+**[8]** Zhang, H., Cui, W., Xu, H., Li, X.-H., Zhu, L., Bai, H., Ma, S., & King, I. (2026). [MTR-DuplexBench: Towards a Comprehensive Evaluation of Multi-Round Conversations for Full-Duplex Speech Language Models](https://aclanthology.org/2026.findings-acl.263/). *Findings of ACL 2026*, 5334–5351. arXiv:2511.10262.
+
+**[9]** Ge, Y., Chen, S., Xiao, J., Liu, X., Xiao, T., et al. (2025). [FLEXI: Benchmarking Full-duplex Human-LLM Speech Interaction](https://arxiv.org/abs/2509.22243). arXiv:2509.22243. — the only benchmark testing model-initiated interruption.
+
+**[10]** Modi, S. N., Mahajan, G., Wetter, M., & Welles, R. (2026). [EchoChain: A Full-Duplex Benchmark for State-Update Reasoning Under Interruptions](https://arxiv.org/abs/2604.16456). arXiv:2604.16456.
+
+**Task-grounded evaluation**
+
+**[11]** Ray, S., Dhandhania, K., Barres, V., & Narasimhan, K. (2026). [τ-Voice: Benchmarking Full-Duplex Voice Agents on Real-World Domains](https://arxiv.org/abs/2603.13686). arXiv:2603.13686. — source of the voice-versus-text capability gap; code at [github.com/sierra-research/tau2-bench](https://github.com/sierra-research/tau2-bench).
+
+**[12]** Bogavelli, T., Gauthier Melançon, G., Stankiewicz, K., Bamgbose, O., Riols, F., et al. (2026). [EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents](https://arxiv.org/abs/2605.13841). ServiceNow. arXiv:2605.13841.
+
+**Timing, instruction following, judges**
+
+**[13]** Arora, S., Lu, Z., Chiu, C.-C., Pang, R., & Watanabe, S. (2025). [Talking Turns: Benchmarking Audio Foundation Models on Turn-Taking Dynamics](https://arxiv.org/abs/2503.01174). ICLR 2025. arXiv:2503.01174.
+
+**[14]** Chang, K.-W., Hu, E.-P., Kuan, C.-Y., Ren, W., Chen, W.-C., Lin, G.-T., Tsao, Y., Sun, S.-H., Lee, H.-y., & Glass, J. (2026). [Game-Time: Evaluating Temporal Dynamics in Spoken Language Models](https://arxiv.org/abs/2509.26388). ICASSP 2026, 16302–16306. arXiv:2509.26388.
+
+**[15]** Tang, Y., Ma, W., Zhao, X., et al. (2026). [Instruct-FD: Can Your Full-Duplex Speech System Follow Turn-Taking Instructions?](https://arxiv.org/abs/2607.20460) Boson AI. arXiv:2607.20460.
+
+**Human data and preference**
+
+**[16]** Wang, C., Xue, H., Li, G., Zhao, Z., Wang, S., Wang, S., Xu, X., Bu, H., & Xie, L. (2026). [Full-Duplex Interaction in Spoken Dialogue Systems: A Comprehensive Study from the ICASSP 2026 HumDial Challenge](https://arxiv.org/abs/2604.21406). arXiv:2604.21406. — dataset and leaderboard at [github.com/ASLP-lab/HumDial-FDBench](https://github.com/ASLP-lab/HumDial-FDBench).
+
+**[17]** Gu, J., Gosai, A., & Siegel, M. (2026). [Voice Showdown: The First Arena for Voice AI](https://scale.com/blog/voice-showdown). Scale AI, March 2026.
+
+**[18]** Jiang, F., Lin, Z., Bu, F., Du, Y., Wang, B., & Li, H. (2025). [S2S-Arena: Evaluating Speech2Speech Protocols on Instruction Following with Paralinguistic Information](https://arxiv.org/abs/2503.05085). arXiv:2503.05085.
+
+**Comparison points outside audio**
+
+**[19]** Wang, Y., Wang, Y., Chen, B., Wu, T., Zhao, D., & Zheng, Z. (2025). [OmniMMI: A Comprehensive Multi-modal Interaction Benchmark in Streaming Video Contexts](https://arxiv.org/abs/2503.22952). CVPR 2025. arXiv:2503.22952. — the proactivity evaluation full-duplex audio still lacks.
+
+**[20]** Hong, J., Yan, S., Cai, J., Jiang, X., Hu, Y., & Xie, W. (2025). [WorldSense: Evaluating Real-world Omnimodal Understanding for Multimodal LLMs](https://arxiv.org/abs/2502.04326). arXiv:2502.04326.
+
+**[21]** Song, Z., Jiang, Q., Cui, M., Li, M., Gao, L., et al. (2026). [Audio Jailbreak: An Open Comprehensive Benchmark for Jailbreaking Large Audio-Language Models (AJailBench)](https://arxiv.org/abs/2505.15406). ACL 2026, 27294–27308. arXiv:2505.15406.
+
+**[22]** Peng, Z., Liu, Y., Sun, Z., Li, M., Luo, Z., et al. (2026). [JALMBench: Benchmarking Jailbreak Vulnerabilities in Audio Language Models](https://arxiv.org/abs/2505.17568). ICLR 2026. arXiv:2505.17568.
 
 ---
 
