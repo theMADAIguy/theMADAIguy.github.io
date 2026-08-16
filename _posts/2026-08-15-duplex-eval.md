@@ -38,12 +38,16 @@ So before we can talk about benchmarks, we need names for the things we're tryin
 
 ## Part 2: Four words you need
 
+<div class="table-scroll" markdown="1">
+
 | Term | What it is | What should happen |
 |---|---|---|
 | **Pause** | You stop, but haven't finished your turn | System stays quiet |
 | **Backchannel** | "Mm-hm," "right" — attention without claiming the floor | System keeps talking |
 | **Barge-in** | You genuinely take the floor mid-response | System stops |
 | **Floor-holding** | System talks through overlap it judged non-interrupting | Depends on the product |
+
+</div>
 
 Read those four rows again and notice something: **all four are the same physical event.** Sound arriving on the input channel while the model is speaking. The difference between them is entirely in what it *meant*.
 
@@ -63,13 +67,17 @@ Which leaves us stuck. If you can't score the artifact, you have to score the in
 
 This is the thing I'd stop and repeat if we were actually talking. Once you see it, every benchmark below stops being a random acronym and becomes a position on a single question: *what's on the other end of the line?*
 
-| Who plays the user | You get | You give up |
+<div class="table-scroll" markdown="1">
+
+| The user is | You get | You give up |
 |---|---|---|
 | Pre-recorded clip | Exact reproducibility | Any reaction — the file delivers the correction at 12.4s whether the model's ready or not |
 | LLM script + TTS | Multiple rounds, cheap scale | Real disfluency; turn boundaries you had to invent |
 | Live LLM examiner | Corrections, entity tracking, adaptivity | Determinism — you can't tell a model regression from an examiner mood swing |
 | Real human recordings | Authentic disfluency and acoustics | Adaptivity, again |
 | Live humans | Everything real | Ground truth entirely |
+
+</div>
 
 Nobody gets all three of reproducible, realistic, and verifiable. Every benchmark in this post is a different answer to which two you keep.
 
@@ -83,13 +91,17 @@ So let's climb it. Five groups of researchers, five different bets about which t
 
 ## Part 4: Five bets
 
-| | The bet | What they found |
+<div class="table-scroll" markdown="1">
+
+| Benchmark | The bet | What they found |
 |---|---|---|
 | **FDB v1 / v1.5** [3,4] | Behaviors are stimulus–response, so a fixed clip is enough | Two *opposite* strategies exist: **responsive** vs. **floor-holding** |
 | **FD-Bench / MTR** [7,8] | Multi-round is the gap; slice the stream into turns | Performance degrades round over round |
 | **FDB-v2 / EVA / τ-voice** [5,12,11] | The user has to be able to react | Voice keeps **30–45%** of text capability |
 | **FDB-v3 / HumDial** [6,16] | Synthetic speech is the confound | Fastest system has the *worst* turn-take rate |
 | **Voice Showdown** [17] | Only humans can judge naturalness | The multilingual gap is the #1 differentiator |
+
+</div>
 
 Five rows, five stories. Here they are in order.
 
@@ -148,13 +160,17 @@ Here's the move I didn't expect. Having climbed to live simulators, FDB-v3 and H
 
 FDB-v3 builds its whole dataset from real human speech annotated for fillers, pauses, hesitations, false starts and self-corrections. And the results are a good advertisement for reporting honestly, because **nobody wins on more than one axis:**
 
-| System | Pass@1 | Latency | Turn-take rate |
-|---|---|---|---|
-| GPT-Realtime | **0.600** | — | — |
-| Gemini Live 3.1 | — | **4.25s** (fastest) | **78.0%** (lowest) |
-| Cascaded (Whisper→GPT-4o→TTS) | — | 10.12s (slowest) | **100%** |
+<div class="table-scroll" markdown="1">
 
-Look at row two, then row three. The fastest system is the one most likely to fail to take its turn at all — **"low latency" and "responds when it should" are different axes**, and a model can buy one with the other. And the cascaded pipeline, the architecture everyone calls obsolete, wins the turn-take column outright.
+| System | Where it wins | What it pays for that |
+|---|---|---|
+| GPT-Realtime | Best Pass@1, **0.600**; best interruption avoidance, **13.5%** | Leads on neither latency nor turn-taking |
+| Gemini Live 3.1 | Fastest, **4.25s** | *Lowest* turn-take rate, **78.0%** |
+| Cascaded (Whisper→GPT-4o→TTS) | Perfect turn-take rate, **100%** | Slowest by far, **10.12s** |
+
+</div>
+
+Read the second and third rows together. The fastest system is the one most likely to fail to take its turn at all — **"low latency" and "responds when it should" are different axes**, and a model can buy one with the other. And the cascaded pipeline, the architecture everyone calls obsolete, wins the turn-take column outright.
 
 **The catch:** real audio is *fixed* audio. Authentic disfluency, no adaptivity — you're back on rung one, just with better material.
 
@@ -180,6 +196,8 @@ So: you've picked a rung, you've picked a judge. Now you need numbers — and th
 
 ## Part 5: The metrics, and where they lie to you
 
+<div class="table-scroll" markdown="1">
+
 | Metric | Measures | The catch |
 |---|---|---|
 | **TOR** (Takeover Rate) | How often the model grabs the floor in a window | Value depends entirely on the window, and papers define it differently |
@@ -188,6 +206,8 @@ So: you've picked a rung, you've picked a judge. Now you need numbers — and th
 | **Backchannel frequency** | How often, not how well | Constant random backchanneling scores well |
 | **LLM-as-judge** | Post-interruption quality | Softest number in every paper that uses it |
 | **pass@k vs. pass^k** | Peak vs. *reliable* capability | EVA-Bench median gap: **0.44** |
+
+</div>
 
 If you only take one row from that table, take the last one. pass@k is best-of-k; pass^k demands *all* k succeed. A median gap of 0.44 means peak and dependable capability are wildly different quantities — and a system that works on the third try isn't one you put on a support line.
 
@@ -213,6 +233,8 @@ That's the state of what *is* measured. The more interesting list is what isn't.
 
 Step out of audio for a second. Text, vision and omni-modal evaluation have spent years building axes that full-duplex simply doesn't have yet.
 
+<div class="table-scroll" markdown="1">
+
 | Axis | Mature elsewhere | Status in full-duplex |
 |---|---|---|
 | **Grounding / hallucination** | A decade of attribution work; WorldSense [20] — 3,172 QA over 1,662 synced videos | One sub-component of EVA-Bench's EVA-A. Otherwise nothing |
@@ -223,6 +245,8 @@ Step out of audio for a second. Text, vision and omni-modal evaluation have spen
 | **Long-horizon state** | Long-context benchmarks | EchoChain [10]: single interruption, **no model >50%** pass |
 | **Error bars** | Increasingly standard | Duplex is *more* stochastic and reports confidence intervals *less* |
 | **Cost** | Standard | Nobody reports it |
+
+</div>
 
 Three of those rows deserve more than a cell.
 
