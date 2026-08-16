@@ -36,27 +36,6 @@ $on-laptop:        800px;
         "layout",
         "publications",
         "syntax-highlighting",
-        "blog"
+        "blog",
+        "tables",
 ;
-.table-scroll {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  margin: 1.5rem 0;
-}
- 
-.table-scroll table {
-  width: 100%;
-  border-collapse: collapse;
-  /* auto lets long cells breathe instead of forcing equal columns */
-  table-layout: auto;
-}
- 
-.table-scroll th,
-.table-scroll td {
-  padding: 0.5rem 0.75rem;
-  text-align: left;
-  vertical-align: top;
-  border-bottom: 1px solid #e8e8e8;
-  /* stop long cells from collapsing to one word per line */
-  min-width: 8rem;
-}
