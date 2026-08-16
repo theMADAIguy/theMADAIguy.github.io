@@ -1,0 +1,43 @@
+/* Add to your site's stylesheet if `.table-scroll` isn't already defined.
+   The post wraps its six tables in <div class="table-scroll" markdown="1">.
+   Without this rule the wrappers are inert — tables still render, they just
+   overflow the column on narrow screens instead of scrolling. */
+
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0;
+}
+
+.table-scroll table {
+  width: 100%;
+  border-collapse: collapse;
+  /* auto lets long cells breathe instead of forcing equal columns */
+  table-layout: auto;
+}
+
+.table-scroll th,
+.table-scroll td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #e8e8e8;
+  /* stop long cells from collapsing to one word per line */
+  min-width: 8rem;
+}
+
+.table-scroll th {
+  font-weight: 600;
+  border-bottom: 2px solid #d0d0d0;
+  white-space: nowrap;
+}
+
+/* First column is a label column in every table in this post. */
+.table-scroll td:first-child {
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .table-scroll td:first-child { white-space: normal; }
+  .table-scroll th, .table-scroll td { font-size: 0.9rem; }
+}
