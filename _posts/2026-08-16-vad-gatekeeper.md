@@ -23,6 +23,7 @@ Before analyzing the architectures, we must define the primitives of real-time a
 
 ## The Core Idea
 
+
 A VAD module is fundamentally an information bottleneck that decides what constitutes "signal" versus "noise." The evolution of VAD is not just about writing better code; it is entirely about finding better mathematical representations of that signal. Over the past twenty years, researchers have placed three distinct bets on how to separate human speech from everything else.
 
 ## The Amplitude Bet: Time-Domain Heuristics
