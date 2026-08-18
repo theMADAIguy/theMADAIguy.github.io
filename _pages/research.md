@@ -32,9 +32,9 @@ I am currently building audio language models for full-duplex speech interaction
 <span class="pub-venue">In submission, 2026 &middot; <span class="pub-soon">(Coming soon)</span></span>
 </li>
 <li>
-<span class="pub-title">Omni2LoRA: Coherence-Preserving Parametric Memory for Efficient Omni Language Models</span>
+<span class="pub-title"><a href="https://arxiv.org/pdf/2608.09227">Omni2LoRA: Coherence-Preserving Parametric Memory for Efficient Omni Language Models</span>
 <span class="pub-authors"><i>Puneet Mathur</i>, Manan Suri, Dinesh Manocha</span>
-<span class="pub-venue">In submission, 2026 &middot; <span class="pub-soon">(Coming soon)</span></span>
+<span class="pub-venue">In submission, 2026 </span>
 </li>
 </ul>
 
