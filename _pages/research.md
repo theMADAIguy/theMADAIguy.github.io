@@ -198,7 +198,7 @@ This builds on earlier work of mine at the intersection of speech, retrieval, an
 </li>
 </ul>
 
-## Multimodal Finance, Affective Computing &amp; Video Understanding
+## Multimodal AI, Affective Computing &amp; Video Understanding
 
 <ul class="pub-list">
 <li>
