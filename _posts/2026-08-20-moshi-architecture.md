@@ -1049,57 +1049,6 @@ at exactly the moment a person would be thinking.
 
 ---
 
-## The whole thing in one paragraph
-
-Cascaded voice assistants sound like walkie-talkies because turn-taking is
-implemented as control flow: a boolean decides whose turn it is, and overlap is an
-error condition. Moshi removes the boolean by making output unconditional — it
-emits a frame of audio every 80 ms forever, and silence is a token it predicts
-rather than a state it enters. Affording that constant tick took four things. Mimi,
-a fully causal codec at 12.5 Hz and 1.1 kbps that distils WavLM into a semantic
-quantizer running *parallel* to a seven-level acoustic RVQ rather than in front of
-it, so semantics and audio quality stop competing. An RQ-Transformer splitting
-prediction into a 7B temporal model that runs once per frame and a small depth model
-that runs over seventeen sub-sequences within it — necessary specifically because
-the usual trick of decorrelating codebooks with delay costs 640 ms that Moshi
-doesn't have. A multi-stream sequence that concatenates the user's eight codebooks
-onto the model's own with no turn mechanism of any kind. And Inner Monologue, one
-time-aligned text token per frame predicted *before* that frame's audio, which
-nearly triples spoken question answering for one extra token per step and, by
-flipping the sign of a delay parameter, yields streaming ASR and streaming TTS from
-the same weights. Underneath all of it sits a four-stage training ladder whose only
-source of genuine full-duplex supervision is 2,000 hours of twenty-year-old
-telephone calls. What remains hard: a real knowledge gap against the text model it
-started from, watermarking that its own codec erases, objective audio metrics that
-stop tracking human judgment the moment the loss changes, and evaluation that can
-tell you the distribution of turn-taking behaviours is right without telling you
-whether any individual turn was.
-
----
-
-*The code in this post is illustrative pseudocode. It is written to expose intent
-and would not run. Ana and Ravi are devices; the technical claims are sourced
-below.*
-
----
-
-## A note on the figures
-
-All fourteen figures are TikZ. The `.tex` sources ship alongside this post, which
-means any number in any of them can be corrected without regenerating an image —
-change the value, recompile, done. They share one preamble and one palette, so the
-set reads as a set.
-
-The reason none of them are generated images is specific rather than dogmatic.
-Almost every figure here turns on an exact count or an exact label: one semantic
-quantizer beside seven acoustic ones and not eight in a row, seventeen rows in the
-token grid, `[0,2,2,2,2,2,2,2]` rather than something that looks like it, 2,000
-hours next to 7,000,000. Image generators fail at those in a particular and
-dangerous way — the output looks clean and professional and states something false,
-and most readers won't count the boxes.
-
----
-
 ## References
 
 **Moshi and what came out of it**
