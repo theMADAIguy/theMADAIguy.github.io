@@ -10,7 +10,7 @@ order: 3
 * [Muffin: Multimodal AI For Financial Forecasting](https://finnlp-muffin-ijcai23.github.io/) &middot; IJCAI 2023
 * Workshop on Generative AI for Finance &middot; ACM Multimedia 2023
 ## Invited Talks
-* Microsoft IDC &mdash; Azure, Hyderabad, India &middot; 2023
+* Microsoft Research, Google Research, Adobe Research, Meta Reality Labs, NVIDIA
 * Rising Star in AI &mdash; KAUST University &middot; 2023
 * WACV 2023 Doctoral Consortium
 ## Reviewing &amp; Program Committee Service
