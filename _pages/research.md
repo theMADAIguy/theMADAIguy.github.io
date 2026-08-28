@@ -22,7 +22,7 @@ I am currently building audio language models for full-duplex speech interaction
 <span class="pub-venue">In submission, 2026 &middot; <span class="pub-soon">(Coming soon)</span></span>
 </li>
 <li>
-<span class="pub-title">DuplexSpeechBench&ndash;Document Grounding: Benchmarking Document Grounding and Hallucinations in Full-Duplex Voice Agents</span>
+<span class="pub-title"><a href="https://drive.google.com/file/d/1AXy6N1eUe5DbDj20cRdw9fHPKlyASnVm/view">DuplexSpeechBench&ndash;Document Grounding: Benchmarking Document Grounding and Hallucinations in Full-Duplex Voice Agents</span>
 <span class="pub-authors"><i>Puneet Mathur</i>, Nedim Lipka, Zeyu Jin, Dinesh Manocha</span>
 <span class="pub-venue">In submission, 2026 &middot; <span class="pub-soon">(Coming soon)</span></span>
 </li>
