@@ -24,7 +24,7 @@ I am currently building audio language models for full-duplex speech interaction
 <li>
 <span class="pub-title"><a href="https://drive.google.com/file/d/19PFdT7quVGvLRk3se8uoPB6xmPqB4tyJ/view?usp=sharing">DuplexSpeechBench&ndash;IFEval: Evaluating Implicit Instruction Following in Full-Duplex Voice Agents</a></span>
 <span class="pub-authors"><i>Puneet Mathur</i>, Dinesh Manocha</span>
-<span class="pub-links"><a href="http://dsb-ifeval.github.io/">Project Page</a></span>
+<span class="pub-links"><a href="http://dsb-ifeval.github.io/" style="color: #0366d6;">Project Page</a></span>
 <span class="pub-venue">In submission, 2026</span>
 </li>
 <li>
@@ -35,7 +35,7 @@ I am currently building audio language models for full-duplex speech interaction
 <li>
 <span class="pub-title"><a href="https://arxiv.org/pdf/2608.09227">Omni2LoRA: Coherence-Preserving Parametric Memory for Efficient Omni Language Models</a></span>
 <span class="pub-authors"><i>Puneet Mathur</i>, Manan Suri, Dinesh Manocha</span>
-<span class="pub-links"><a href="http://omni2lora.github.io/">Project Page</a></span>
+<span class="pub-links"><a href="http://omni2lora.github.io/" style="color: #0366d6;">Project Page</a></span>
 <span class="pub-venue">In submission, 2026</span>
 </li>
 </ul>
