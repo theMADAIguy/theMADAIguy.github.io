@@ -1,7 +1,8 @@
 ---
+
 layout: home
 permalink: /
----
+------------
 
 <img class="home-photo" src="{{ site.baseurl }}/assets/me.jpeg" alt="Puneet Mathur">
 
@@ -9,11 +10,11 @@ I am a Research Scientist at [Adobe Research](https://research.adobe.com/) (AIR 
 
 My current research centers on **audio language modeling and full-duplex speech systems** — models that can listen and speak at the same time, reason over acoustic and spoken context in real time, and handle natural conversational phenomena like interruptions, backchannels, and turn-taking, moving beyond the rigid turn-based latency of today's voice assistants. This builds on my longer-standing interest in speech and audio (retrieval-augmented language modeling for ASR personalization, layout-informed neural speech synthesis) and sits alongside my broader work on agentic AI systems: memory and continual learning for LLM agents, RL/GRPO-based reasoning, and multi-agent orchestration for document and role-play tasks.
 
-During my Ph.D., I worked on multimodal document understanding, information extraction, and long-context modeling across documents, language, video, and speech. I've also spent time as a Research Scientist Intern at Meta AI (NLP & Speech), Microsoft Research, and Adobe Research, at Verisk AI as an AI/ML Research Intern, and at Dataminr as an AI Research Intern &mdash; see the [Experience]({{ site.baseurl }}/experience/) page for details.
+During my Ph.D., I worked on multimodal document understanding, information extraction, and long-context modeling across documents, language, video, and speech. I've also spent time as a Research Scientist Intern at Meta AI (NLP & Speech), Microsoft Research, and Adobe Research, at Verisk AI as an AI/ML Research Intern, and at Dataminr as an AI Research Intern — see the [Experience]({{ site.baseurl }}/experience/) page for details.
 
-I maintain a full list of my publications on the [Research]({{ site.baseurl }}/research/) page. I'm always happy to hear about potential collaborations &mdash; feel free to reach out by email!
+I maintain a full list of my publications on the [Research]({{ site.baseurl }}/research/) page. I'm always happy to hear about potential collaborations — feel free to reach out by email!
 
-[Email](mailto:{{ site.email }}) &nbsp;/&nbsp; [CV]({{ site.baseurl }}/assets/CV.pdf) &nbsp;/&nbsp; [Google Scholar]({{ site.scholar_url }}) &nbsp;/&nbsp; [LinkedIn](https://www.linkedin.com/in/{{ site.linkedin_username }}/) &nbsp;/&nbsp; [GitHub](https://github.com/{{ site.github_username }})
+[Email](mailto:{{ site.email }})  /  [CV]({{ site.baseurl }}/assets/CV.pdf)  /  [Google Scholar]({{ site.scholar_url }})  /  [LinkedIn](https://www.linkedin.com/in/{{ site.linkedin_username }}/)  /  [GitHub](https://github.com/{{ site.github_username }})
 
 #### Updates
 
@@ -21,7 +22,15 @@ I maintain a full list of my publications on the [Research]({{ site.baseurl }}/r
 <table>
 <col>
 <col>
-<tr><td><b>Aug 2026:</b></td><td>New blog post: <a href="{{ site.baseurl }}/blog/2026/08/09/full-duplex-explained/">How Full-Duplex Audio Models Actually Work</a>.</td></tr>
+
+{% for post in site.posts limit:5 %}
+
+<tr><td><b>{{ post.date | date: "%b %Y" }}:</b></td><td>New blog post: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>.</td></tr>
+{% endfor %}
+
+<tr><td><b>2026:</b></td><td>New paper: <a href="https://drive.google.com/file/d/19PFdT7quVGvLRk3se8uoPB6xmPqB4tyJ/view?usp=sharing" target="_blank">DuplexSpeechBench–IFEval: Evaluating Implicit Instruction Following in Full-Duplex Voice Agents</a> — in submission. <a href="http://dsb-ifeval.github.io/" target="_blank">[Project Page]</a></td></tr>
+<tr><td><b>2026:</b></td><td>New paper: <a href="https://drive.google.com/file/d/1AXy6N1eUe5DbDj20cRdw9fHPKlyASnVm/view" target="_blank">DuplexSpeechBench–Document Grounding: Benchmarking Document Grounding and Hallucinations in Full-Duplex Voice Agents</a> — in submission. <a href="http://dsb-dg.github.io/" target="_blank">[Project Page]</a></td></tr>
+<tr><td><b>Aug 2026:</b></td><td>New paper: <a href="https://arxiv.org/pdf/2608.09227" target="_blank">Omni2LoRA: Coherence-Preserving Parametric Memory for Efficient Omni Language Models</a> — in submission. <a href="http://omni2lora.github.io/" target="_blank">[Project Page]</a></td></tr>
 <tr><td><b>2026:</b></td><td>Started new research on audio language modeling and full-duplex speech systems.</td></tr>
 <tr><td><b>2026:</b></td><td><a href="https://arxiv.org/abs/2511.08798" target="_blank">ARGUS: Structured Uncertainty Guided Clarification for LLM Agents</a> accepted to ACL 2026.</td></tr>
 <tr><td><b>Nov 2025:</b></td><td>Co-organized the RARA Workshop (Grounding Documents with Reasoning, Agents, Retrieval, and Attribution) at ICDM 2025.</td></tr>
