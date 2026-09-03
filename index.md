@@ -1,9 +1,3 @@
----
-
-layout: home
-permalink: /
-------------
-
 <img class="home-photo" src="{{ site.baseurl }}/assets/me.jpeg" alt="Puneet Mathur">
 
 I am a Research Scientist at [Adobe Research](https://research.adobe.com/) (AIR Lab) in San Jose, CA, working on agentic AI, reinforcement learning for large language models, and multimodal document intelligence. I completed my Ph.D. in Computer Science at the [University of Maryland, College Park](https://www.cs.umd.edu/), advised by [Dr. Dinesh Manocha](https://www.cs.umd.edu/people/dmanocha), and hold an M.S. in Computer Science from UMD (2021) and a B.E. in Computer Engineering from [Netaji Subhas Institute of Technology](http://www.nsit.ac.in/), Delhi (2018).
