@@ -93,11 +93,6 @@ This builds on earlier work of mine at the intersection of speech, retrieval, an
 <span class="pub-authors">Peijun Qing, <i>Puneet Mathur</i>, Nedim Lipka, Varun Manjunatha, Ryan A. Rossi, Franck Dernoncourt, Saeed Hassanpour, Soroush Vosoughi</span>
 <span class="pub-venue">In submission, 2026</span>
 </li>
-<li>
-<span class="pub-title">SETA: Self Evolving Tutor Agents via Conversational Prompt Optimization</span>
-<span class="pub-authors"><i>Puneet Mathur</i>, Jack Wang, Nedim Lipka</span>
-<span class="pub-venue">In submission, 2025</span>
-</li>
 </ul>
 
 ## Multimodal Document Intelligence, Attribution &amp; RAG
