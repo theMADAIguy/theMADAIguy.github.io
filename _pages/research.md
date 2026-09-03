@@ -5,10 +5,10 @@ permalink: /research/
 order: 1
 ---
 
-My research focuses on *agentic AI* and *multimodal language understanding* — spanning audio and speech, documents, and language. I work on reinforcement learning for LLM agents, audio/speech language modeling (including full-duplex spoken dialogue systems), multimodal document intelligence, and retrieval-augmented generation over visually-rich content (tables, charts, and flowcharts).
+My current work at Adobe Research is directed towards *audio language modeling and evaluations for full-duplex speech systems*, reinforcement learning for LLM agents, and multimodal omni models. Previously, I have worked on *agentic AI* and *multimodal language understanding* — spanning audio and speech, documents, and language.
 
-During my Ph.D. at the University of Maryland, my work centered on multimodal document understanding, information extraction, and long-context modeling. My current work at Adobe Research is directed toward agentic memory and continual learning, RL/GRPO-based reasoning, and audio language modeling for *full-duplex speech systems*.
 
+During my Ph.D. at the University of Maryland, my work centered on multimodal document understanding, information extraction, and long-context modeling. 
 [Google Scholar]({{ site.scholar_url }})
 
 ## Audio &amp; Speech: Full-Duplex Language Modeling
