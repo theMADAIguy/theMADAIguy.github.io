@@ -22,7 +22,7 @@ I am currently building audio language models for full-duplex speech interaction
 <span class="pub-venue">In submission, 2026 &middot; <span class="pub-soon">(Coming soon)</span></span>
 </li>
 <li>
-<span class="pub-title"><a href="https://drive.google.com/file/d/19PFdT7quVGvLRk3se8uoPB6xmPqB4tyJ/view?usp=sharing">DuplexSpeechBench&ndash;IFEval: Evaluating Implicit Instruction Following in Full-Duplex Voice Agents</a></span>
+<span class="pub-title"><a href="https://arxiv.org/pdf/2609.03423">DuplexSpeechBench&ndash;IFEval: Evaluating Implicit Instruction Following in Full-Duplex Voice Agents</a></span>
 <span class="pub-authors"><i>Puneet Mathur</i>, Dinesh Manocha</span>
 <span class="pub-links"><a href="http://dsb-ifeval.github.io/" style="color: #0366d6;">[Project Page]</a></span>
 <span class="pub-venue">In submission, 2026</span>
