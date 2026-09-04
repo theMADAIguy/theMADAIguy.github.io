@@ -22,7 +22,7 @@ I maintain a full list of my publications on the [Research]({{ site.baseurl }}/r
 <tr><td><b>{{ post.date | date: "%b %Y" }}:</b></td><td>New blog post: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>.</td></tr>
 {% endfor %}
 
-<tr><td><b>2026:</b></td><td>New paper: <a href="https://drive.google.com/file/d/19PFdT7quVGvLRk3se8uoPB6xmPqB4tyJ/view?usp=sharing" target="_blank">DuplexSpeechBench–IFEval: Evaluating Implicit Instruction Following in Full-Duplex Voice Agents</a> — in submission. <a href="http://dsb-ifeval.github.io/" target="_blank">[Project Page]</a></td></tr>
+<tr><td><b>2026:</b></td><td>New paper: <a href="https://arxiv.org/pdf/2609.03423" target="_blank">DuplexSpeechBench–IFEval: Evaluating Implicit Instruction Following in Full-Duplex Voice Agents</a> — in submission. <a href="http://dsb-ifeval.github.io/" target="_blank">[Project Page]</a></td></tr>
 <tr><td><b>2026:</b></td><td>New paper: <a href="https://drive.google.com/file/d/1AXy6N1eUe5DbDj20cRdw9fHPKlyASnVm/view" target="_blank">DuplexSpeechBench–Document Grounding: Benchmarking Document Grounding and Hallucinations in Full-Duplex Voice Agents</a> — in submission. <a href="http://dsb-dg.github.io/" target="_blank">[Project Page]</a></td></tr>
 <tr><td><b>Aug 2026:</b></td><td>New paper: <a href="https://arxiv.org/pdf/2608.09227" target="_blank">Omni2LoRA: Coherence-Preserving Parametric Memory for Efficient Omni Language Models</a> — in submission. <a href="http://omni2lora.github.io/" target="_blank">[Project Page]</a></td></tr>
 <tr><td><b>2026:</b></td><td>Started new research on audio language modeling and full-duplex speech systems.</td></tr>
