@@ -6,8 +6,6 @@ date: 2026-09-11
 image: /assets/blog/turnbench-turn-taking/fig3.png
 ---
 
-# TurnBench: Grading Turn-Taking Like a Linguist, Not a Timer
-
 *Ask most voice agents to hold a real conversation and the cracks show fast: they cut you off during a backchannel, or they wait a beat too long after you've clearly finished.*
 
 ---
