@@ -19,7 +19,7 @@ I am currently building audio language models for full-duplex speech interaction
 <li>
 <span class="pub-title"><a href="">FD-VAD: Semantic Endpoint Detection for Streaming Full-Duplex Speech</a></span>
 <span class="pub-authors"><i>Puneet Mathur</i>, Dinesh Manocha</span>
-<span class="pub-links"><a href="[[http://dsb-ifeval.github.io/](https://fd-vad.github.io/)](https://fd-vad.github.io/)" style="color: #0366d6;">[Project Page]</a></span>
+<span class="pub-links"><a href="https://fd-vad.github.io/" style="color: #0366d6;">[Project Page]</a></span>
 <span class="pub-venue">In submission, 2026</span>
 </li>
 <li>
