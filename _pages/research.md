@@ -17,6 +17,12 @@ I am currently building audio language models for full-duplex speech interaction
 
 <ul class="pub-list">
 <li>
+<span class="pub-title"><a href="">FD-VAD: Semantic Endpoint Detection for Streaming Full-Duplex Speech</a></span>
+<span class="pub-authors"><i>Puneet Mathur</i>, Dinesh Manocha</span>
+<span class="pub-links"><a href="[[http://dsb-ifeval.github.io/](https://fd-vad.github.io/)](https://fd-vad.github.io/)" style="color: #0366d6;">[Project Page]</a></span>
+<span class="pub-venue">In submission, 2026</span>
+</li>
+<li>
 <span class="pub-title">Duplex-R1: Full-Duplex Audio LMs that Reason, Retrieve, and Speak While Searching</span>
 <span class="pub-authors"><i>Puneet Mathur</i>, Nedim Lipka, Zeyu Jin, Dinesh Manocha</span>
 <span class="pub-venue">In submission, 2026 &middot; <span class="pub-soon">(Coming soon)</span></span>
