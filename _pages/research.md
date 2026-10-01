@@ -13,11 +13,17 @@ During my Ph.D. at the University of Maryland, my work centered on multimodal do
 
 ## Audio &amp; Speech: Full-Duplex Language Modeling
 
-I am currently building audio language models for full-duplex speech interaction — systems that can listen and generate speech simultaneously, handle interruptions, backchannels, and turn-taking natively, rather than the rigid turn-based latency of today's half-duplex voice assistants. This includes benchmarking document grounding, hallucination, and instruction-following in full-duplex voice agents, reasoning-and-retrieval-while-speaking architectures, and efficient parametric memory for omni language models. Papers and project pages will be linked here as they become public.
+I am building audio language models and evaluation benchmarks for full-duplex voice agents — systems that can listen and generate speech simultaneously, handle interruptions, tool calling, and execute workflows natively. Papers and project pages will be linked here as they become public.
 
 <ul class="pub-list">
 <li>
-<span class="pub-title"><a href="">FD-VAD: Semantic Endpoint Detection for Streaming Full-Duplex Speech</a></span>
+<span class="pub-title"><a href="https://arxiv.org/pdf/2609.34973">APEX-Voice: Can Voice Agents Complete Professional Workflows through Full-Duplex Interaction</a></span>
+<span class="pub-authors"><i>Puneet Mathur</i>, Dinesh Manocha</span>
+<span class="pub-links"><a href="https://apex-voice.github.io/" style="color: #0366d6;">[Project Page]</a></span>
+<span class="pub-venue">In submission, 2026</span>
+</li>
+<li>
+<span class="pub-title"><a href="https://arxiv.org/pdf/2609.35791v1">FD-VAD: Semantic Endpoint Detection for Streaming Full-Duplex Speech</a></span>
 <span class="pub-authors"><i>Puneet Mathur</i>, Dinesh Manocha</span>
 <span class="pub-links"><a href="https://fd-vad.github.io/" style="color: #0366d6;">[Project Page]</a></span>
 <span class="pub-venue">In submission, 2026</span>
