@@ -102,7 +102,7 @@ This builds on earlier work of mine at the intersection of speech, retrieval, an
 <span class="pub-venue">In submission, 2026</span>
 </li>
 <li>
-<span class="pub-title">Cluster-R1: Large Reasoning Models Are Instruction-following Clustering Agents</span>
+<span class="pub-title"><a href="https://arxiv.org/pdf/2603.23518">Cluster-R1: Large Reasoning Models Are Instruction-following Clustering Agents</a></span>
 <span class="pub-authors">Peijun Qing, <i>Puneet Mathur</i>, Nedim Lipka, Varun Manjunatha, Ryan A. Rossi, Franck Dernoncourt, Saeed Hassanpour, Soroush Vosoughi</span>
 <span class="pub-venue">In submission, 2026</span>
 </li>
@@ -111,6 +111,11 @@ This builds on earlier work of mine at the intersection of speech, retrieval, an
 ## Multimodal Document Intelligence, Attribution &amp; RAG
 
 <ul class="pub-list">
+<li>
+<span class="pub-title"><a href="https://arxiv.org/pdf/2604.25231">DRAGON: A Benchmark for Evidence-Grounded Visual Reasoning over Diagrams</a></span>
+<span class="pub-authors">Anirudh Iyengar Kaniyar Narayana Iyengar*, Tampu Ravi Kumar*, Gaurav Najpande, Manan Suri, Dinesh Manocha, <i>Puneet Mathur</i>, Vivek Gupta</span>
+<span class="pub-venue">Neurips 2026 (Benchmarks and Dataset)</span>
+</li>
 <li>
 <span class="pub-title"><a href="https://research.adobe.com/publication/charteval-llm-driven-chart-generation-evaluation-using-scene-graph-parsing/">ChartEval: LLM-Driven Chart Generation Evaluation Using Scene Graph Parsing</a></span>
 <span class="pub-authors">Kanika Goswami, <i>Puneet Mathur</i>, Franck Dernoncourt, Ryan A. Rossi, Vivek Gupta, Dinesh Manocha</span>
