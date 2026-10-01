@@ -114,7 +114,7 @@ This builds on earlier work of mine at the intersection of speech, retrieval, an
 <li>
 <span class="pub-title"><a href="https://arxiv.org/pdf/2604.25231">DRAGON: A Benchmark for Evidence-Grounded Visual Reasoning over Diagrams</a></span>
 <span class="pub-authors">Anirudh Iyengar Kaniyar Narayana Iyengar*, Tampu Ravi Kumar*, Gaurav Najpande, Manan Suri, Dinesh Manocha, <i>Puneet Mathur</i>, Vivek Gupta</span>
-<span class="pub-venue">Neurips 2026 (Benchmarks and Dataset)</span>
+<span class="pub-venue">Neurips 2026 </span>
 </li>
 <li>
 <span class="pub-title"><a href="https://research.adobe.com/publication/charteval-llm-driven-chart-generation-evaluation-using-scene-graph-parsing/">ChartEval: LLM-Driven Chart Generation Evaluation Using Scene Graph Parsing</a></span>
