@@ -4,18 +4,14 @@ title: "The Paradox of Perfection: Why LLMs Need Randomness to Sound Human"
 date: 2026-10-01
 ---
 
-# The Paradox of Perfection: Why LLMs Need Randomness to Sound Human
 
 > **TL;DR**
 >
 > - A language model outputs a probability for every token. *Decoding* is the rule that turns those probabilities into one token.
 > - "Always pick the most likely token" (greedy, beam search) gives bland, looping text on open-ended tasks.
 > - **Temperature** reshapes the distribution. A **random number generator (RNG)** then draws from it. Top-k, top-p and min-p cut off the unreliable tail.
-> - Every number in the figures below is computed from one fixed set of logits, so you can reproduce them.
 
-If you have prepared for an ML interview, you have been asked some version of this: *"We spent millions finding the best weights. Why not just take the best token every time?"*
-
-The intuitive answer is the trap. This post is the mechanism behind the right answer.
+ *"We spend millions finding the best weights. Why not just take the best token every time? What it temperature parameter in LLMs and why how does it work?"*
 
 ---
 
