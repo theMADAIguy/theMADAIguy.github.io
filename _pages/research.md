@@ -5,11 +5,11 @@ permalink: /research/
 order: 1
 ---
 
-## Voice Agents Evaluations & Full-Duplex Speech Language Modeling
+### Voice Agents Evaluations & Full-Duplex Speech Language Modeling
 
 <ul class="pub-list">
 <li>
-<span class="pub-title">PEX-Voice-Healthcare: Benchmarking Voice Agents in Professional Healthcare Workflows</span>
+<span class="pub-title">APEX-Voice-Healthcare: Benchmarking Voice Agents in Professional Healthcare Workflows</span>
 <span class="pub-authors"><i>Puneet Mathur</i>, Dinesh Manocha</span>
 <span class="pub-venue">In submission, 2026 &middot; <span class="pub-soon">(Coming soon)</span></span>
 </li>
@@ -56,11 +56,11 @@ order: 1
 </li>
 </ul>
 
-## Agentic Evals & Benchmarking
+### Agentic Evals & Benchmarking
 
 <ul class="pub-list">
 <li>
-<span class="pub-title">AnalystBench: Benchmarking Professional Long-Form Report Generation with Web-Mined Multimodal Tasks</span>
+<span class="pub-title"><a href="https://aclanthology.org/2026.findings-acl.1197/">AnalystBench: Benchmarking Professional Long-Form Report Generation with Web-Mined Multimodal Tasks</a></span>
 <span class="pub-authors">Chau Minh Pham, Zichao Wang, <i>Puneet Mathur</i>, Alexa Siu, Akriti Jain, Aparna Garimella, Ananya B Sai, Nedim Lipka, Mohit Iyyer, Varun Manjunatha</span>
 <span class="pub-venue">ACL 2026</span>
 </li>
@@ -79,7 +79,7 @@ order: 1
 </ul>
 
 
-## Agentic AI, LLM Reasoning &amp; Reinforcement Learning
+### Agentic AI, LLM Reasoning &amp; Reinforcement Learning
 
 <ul class="pub-list">
 <li>
@@ -99,7 +99,7 @@ order: 1
 </li>
 </ul>
 
-## Multimodal Document Intelligence, Attribution &amp; RAG
+### Multimodal Document Intelligence, Attribution &amp; RAG
 
 <ul class="pub-list">
 <li>
@@ -204,7 +204,7 @@ order: 1
 </li>
 </ul>
 
-## Multimodal AI, Affective Computing &amp; Video Understanding
+### Multimodal AI, Affective Computing &amp; Video Understanding
 
 <ul class="pub-list">
 <li>
