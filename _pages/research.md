@@ -5,17 +5,20 @@ permalink: /research/
 order: 1
 ---
 
-My current work at Adobe Research is directed towards *audio language modeling and evaluations for full-duplex speech systems*, reinforcement learning for LLM agents, and multimodal omni models. Previously, I have worked on *agentic AI* and *multimodal language understanding* — spanning audio and speech, documents, and language.
-
-
-During my Ph.D. at the University of Maryland, my work centered on multimodal document understanding, information extraction, and long-context modeling. 
-[Google Scholar]({{ site.scholar_url }})
-
-## Audio &amp; Speech: Full-Duplex Language Modeling
-
-I am building audio language models and evaluation benchmarks for full-duplex voice agents — systems that can listen and generate speech simultaneously, handle interruptions, tool calling, and execute workflows natively. Papers and project pages will be linked here as they become public.
+## Voice Agents Evaluations & Full-Duplex Speech Language Modeling
 
 <ul class="pub-list">
+<li>
+<span class="pub-title">PEX-Voice-Healthcare: Benchmarking Voice Agents in Professional Healthcare Workflows</span>
+<span class="pub-authors"><i>Puneet Mathur</i>, Dinesh Manocha</span>
+<span class="pub-venue">In submission, 2026 &middot; <span class="pub-soon">(Coming soon)</span></span>
+</li>
+<li>
+<span class="pub-title"><a href="https://arxiv.org/abs/2610.20172">MultiPartyTurnBench: A Benchmark for Multi-Party End-of-Turn and Interruption Detection</a></span>
+<span class="pub-authors"><i>Puneet Mathur</i>, Dinesh Manocha</span>
+<span class="pub-links"><a href="https://multiparty-turnbench.github.io/" style="color: #0366d6;">[Project Page]</a></span>
+<span class="pub-venue">In submission, 2026</span>
+</li>
 <li>
 <span class="pub-title"><a href="https://arxiv.org/pdf/2609.34973">APEX-Voice: Can Voice Agents Complete Professional Workflows through Full-Duplex Interaction</a></span>
 <span class="pub-authors"><i>Puneet Mathur</i>, Dinesh Manocha</span>
@@ -53,40 +56,28 @@ I am building audio language models and evaluation benchmarks for full-duplex vo
 </li>
 </ul>
 
-This builds on earlier work of mine at the intersection of speech, retrieval, and language modeling:
+## Agentic Evals & Benchmarking
 
 <ul class="pub-list">
 <li>
-<span class="pub-title"><a href="https://aclanthology.org/2023.findings-emnlp.757.pdf">PersonaLM: Language Model Personalization via Domain-distributed Span Aggregated K-Nearest N-gram Retrieval Augmentation</a></span>
-<span class="pub-authors"><i>Puneet Mathur</i>, Zhe Liu, Ke Li, Yingyi Ma, Gil Keren, Zeeshan Ahmed, Dinesh Manocha, Xuedong Zhang</span>
-<span class="pub-venue">EMNLP 2023 (Findings)</span>
+<span class="pub-title">AnalystBench: Benchmarking Professional Long-Form Report Generation with Web-Mined Multimodal Tasks</span>
+<span class="pub-authors">Chau Minh Pham, Zichao Wang, <i>Puneet Mathur</i>, Alexa Siu, Akriti Jain, Aparna Garimella, Ananya B Sai, Nedim Lipka, Mohit Iyyer, Varun Manjunatha</span>
+<span class="pub-venue">ACL 2026</span>
 </li>
+
 <li>
-<span class="pub-title"><a href="https://aclanthology.org/2024.lrec-main.457.pdf">DOC-RAG: ASR Language Model Personalization with Domain-Distributed Co-occurrence Retrieval Augmentation</a></span>
-<span class="pub-authors"><i>Puneet Mathur</i>, Zhe Liu, Ke Li, Yingyi Ma, Gil Keren, Zeeshan Ahmed, Dinesh Manocha, Xuedong Zhang</span>
-<span class="pub-venue">COLING 2024</span>
+<span class="pub-title"><a href="https://arxiv.org/abs/2604.25231">DRAGON: A Benchmark for Evidence-Grounded Visual Reasoning over Diagrams</a></span>
+<span class="pub-authors">Anirudh Iyengar Kaniyar Narayana Iyengar, Tampu Ravi Kumar, Gaurav Najpande, Manan Suri, Dinesh Manocha, <i>Puneet Mathur</i>, Vivek Gupta</span>
+<span class="pub-venue">NeurIPS 2026</span>
 </li>
+
 <li>
-<span class="pub-title"><a href="https://www.isca-speech.org/archive/pdfs/interspeech_2022/mathur22_interspeech.pdf">DocLayoutTTS: Dataset and Baselines for Layout-informed Document-level Neural Speech Synthesis</a></span>
-<span class="pub-authors"><i>Puneet Mathur</i>, Franck Dernoncourt, Quan Hung Tran, Jiuxiang Gu, Ani Nenkova, Vlad Morariu, Rajiv Jain, Dinesh Manocha</span>
-<span class="pub-venue">Interspeech 2022</span>
-</li>
-<li>
-<span class="pub-title"><a href="https://isca-speech.org/archive/Interspeech_2020/pdfs/2649.pdf">Risk Forecasting from Earnings Calls Acoustics and Network Correlations</a></span>
-<span class="pub-authors">Ramit Sawhney, Arshiya Aggarwal, Piyush Khanna, <i>Puneet Mathur</i>, Taru Jain, Rajiv Ratn Shah</span>
-<span class="pub-venue">Interspeech 2020</span>
-</li>
-<li>
-<span class="pub-title"><a href="https://www.aclweb.org/anthology/2020.emnlp-main.643.pdf">VolTAGE: Volatility Forecasting via Text Audio Fusion with Graph Convolution Networks for Earnings Calls</a></span>
-<span class="pub-authors">Ramit Sawhney, Arshiya Aggarwal, Piyush Khanna, Taru Jain, <i>Puneet Mathur</i>, Rajiv Ratn Shah</span>
-<span class="pub-venue">EMNLP 2020</span>
-</li>
-<li>
-<span class="pub-title"><a href="https://ieeexplore.ieee.org/document/9414373">Meta-learning for Low-Resource Speech Emotion Recognition</a></span>
-<span class="pub-authors">Suransh Chopra*, <i>Puneet Mathur*</i>, Ramit Sawhney, Rajiv Ratn Shah</span>
-<span class="pub-venue">ICASSP 2021</span>
+<span class="pub-title"><a href="https://research.adobe.com/publication/charteval-llm-driven-chart-generation-evaluation-using-scene-graph-parsing/">ChartEval: LLM-Driven Chart Generation Evaluation Using Scene Graph Parsing</a></span>
+<span class="pub-authors">Kanika Goswami, <i>Puneet Mathur</i>, Ryan A. Rossi, Franck Dernoncourt, Vivek Gupta, Dinesh Manocha</span>
+<span class="pub-venue">AACL 2026</span>
 </li>
 </ul>
+
 
 ## Agentic AI, LLM Reasoning &amp; Reinforcement Learning
 
@@ -257,90 +248,34 @@ This builds on earlier work of mine at the intersection of speech, retrieval, an
 <span class="pub-authors">Ramit Sawhney, <i>Puneet Mathur</i>, Piyush Khanna, Ayush Mangal, Rajiv Ratn Shah</span>
 <span class="pub-venue">ACM Multimedia 2020 <span class="pub-flag">(Oral)</span></span>
 </li>
-</ul>
-
-## Early Research: Vision, NLP &amp; Social Media (2018&ndash;2020)
-
-<ul class="pub-list">
 <li>
-<span class="pub-title"><a href="https://ieeexplore.ieee.org/document/9054672">Mixup Multi-Attention Multi-Tasking Model for Early-Stage Leukemia Identification</a></span>
-<span class="pub-authors"><i>Puneet Mathur*</i>, Mehak Piplani*, Ramit Sawhney, Rajiv Ratn Shah</span>
-<span class="pub-venue">ICASSP 2020</span>
+<span class="pub-title"><a href="https://aclanthology.org/2023.findings-emnlp.757.pdf">PersonaLM: Language Model Personalization via Domain-distributed Span Aggregated K-Nearest N-gram Retrieval Augmentation</a></span>
+<span class="pub-authors"><i>Puneet Mathur</i>, Zhe Liu, Ke Li, Yingyi Ma, Gil Keren, Zeeshan Ahmed, Dinesh Manocha, Xuedong Zhang</span>
+<span class="pub-venue">EMNLP 2023 (Findings)</span>
 </li>
 <li>
-<span class="pub-title"><a href="https://ieeexplore.ieee.org/document/9053177">Rethinking Retinal Landmark Localization as Pose Estimation: Naive Single Stacked Network for Optic Disk and Fovea Detection</a></span>
-<span class="pub-authors">Shishira Maiya*, <i>Puneet Mathur*</i></span>
-<span class="pub-venue">ICASSP 2020</span>
+<span class="pub-title"><a href="https://aclanthology.org/2024.lrec-main.457.pdf">DOC-RAG: ASR Language Model Personalization with Domain-Distributed Co-occurrence Retrieval Augmentation</a></span>
+<span class="pub-authors"><i>Puneet Mathur</i>, Zhe Liu, Ke Li, Yingyi Ma, Gil Keren, Zeeshan Ahmed, Dinesh Manocha, Xuedong Zhang</span>
+<span class="pub-venue">COLING 2024</span>
 </li>
 <li>
-<span class="pub-title"><a href="https://link.springer.com/chapter/10.1007/978-3-030-45442-5_33">Utilizing Temporal Psycholinguistic Cues for Suicidal Intent Estimation</a></span>
-<span class="pub-authors"><i>Puneet Mathur</i>, Ramit Sawhney, Shivang Chopra, Rajiv Ratn Shah</span>
-<span class="pub-venue">ECIR 2020 (Short)</span>
+<span class="pub-title"><a href="https://www.isca-speech.org/archive/pdfs/interspeech_2022/mathur22_interspeech.pdf">DocLayoutTTS: Dataset and Baselines for Layout-informed Document-level Neural Speech Synthesis</a></span>
+<span class="pub-authors"><i>Puneet Mathur</i>, Franck Dernoncourt, Quan Hung Tran, Jiuxiang Gu, Ani Nenkova, Vlad Morariu, Rajiv Jain, Dinesh Manocha</span>
+<span class="pub-venue">Interspeech 2022</span>
 </li>
 <li>
-<span class="pub-title"><a href="https://www.aaai.org/ojs/index.php/ICWSM/article/view/7292">#MeTooMA: Multi-Aspect Annotations of Tweets Related to the MeToo Movement</a></span>
-<span class="pub-authors">Akash Gautam*, <i>Puneet Mathur*</i>, Rakesh Gosangi, Debanjan Mahata, Ramit Sawhney, Rajiv Ratn Shah</span>
-<span class="pub-links"><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JN4EYU">Dataset</a></span>
-<span class="pub-venue">ICWSM 2020</span>
+<span class="pub-title"><a href="https://isca-speech.org/archive/Interspeech_2020/pdfs/2649.pdf">Risk Forecasting from Earnings Calls Acoustics and Network Correlations</a></span>
+<span class="pub-authors">Ramit Sawhney, Arshiya Aggarwal, Piyush Khanna, <i>Puneet Mathur</i>, Taru Jain, Rajiv Ratn Shah</span>
+<span class="pub-venue">Interspeech 2020</span>
 </li>
 <li>
-<span class="pub-title"><a href="https://www.aaai.org/ojs/index.php/AAAI/article/view/5374">Hindi-English Hate Speech Detection: Author Profiling, Debiasing, and Practical Perspectives</a></span>
-<span class="pub-authors">Shivang Chopra, Ramit Sawhney, <i>Puneet Mathur</i>, Rajiv Ratn Shah</span>
-<span class="pub-venue">AAAI 2020 <span class="pub-flag">(Oral)</span></span>
+<span class="pub-title"><a href="https://www.aclweb.org/anthology/2020.emnlp-main.643.pdf">VolTAGE: Volatility Forecasting via Text Audio Fusion with Graph Convolution Networks for Earnings Calls</a></span>
+<span class="pub-authors">Ramit Sawhney, Arshiya Aggarwal, Piyush Khanna, Taru Jain, <i>Puneet Mathur</i>, Rajiv Ratn Shah</span>
+<span class="pub-venue">EMNLP 2020</span>
 </li>
 <li>
-<span class="pub-title"><a href="https://ieeexplore.ieee.org/document/8658665">Exploring Classification of Histological Disease Biomarkers from Renal Biopsy Images</a></span>
-<span class="pub-authors"><i>Puneet Mathur*</i>, Meghna P. Ayyar*, Rajiv Ratn Shah, Shree G Sharma</span>
-<span class="pub-links"><a href="{{ site.baseurl }}/assets/wacv_paper.pdf">Poster</a> &middot; <a href="https://www.youtube.com/watch?v=iuas8M8jTkg&t=2s">Video</a></span>
-<span class="pub-venue">WACV 2019</span>
-</li>
-</ul>
-
-## Workshop Papers
-
-<ul class="pub-list">
-<li>
-<span class="pub-title">Suicide Risk Assessment via Temporal Psycholinguistic Modeling</span>
-<span class="pub-authors"><i>Puneet Mathur</i>, Ramit Sawhney, Rajiv Ratn Shah</span>
-<span class="pub-venue">AAAI Student Abstract and Poster 2020</span>
-</li>
-<li>
-<span class="pub-title">An Iterative Approach for Identifying Complaint Based Tweets in Social Media Platforms</span>
-<span class="pub-authors">Gyanesh Anand, Akash Kumar Gautam, <i>Puneet Mathur</i>, Debanjan Mahata, Rajiv Ratn Shah, Ramit Sawhney</span>
-<span class="pub-venue">AAAI Student Abstract and Poster 2020</span>
-</li>
-<li>
-<span class="pub-title"><a href="https://www.aclweb.org/anthology/N19-3019">SNAP-BATNET: Cascading Author Profiling and Social Network Graphs for Suicide Ideation Detection on Social Media</a></span>
-<span class="pub-authors">Rohan Mishra, Pradyumna Prakhar Sinha, Ramit Sawhney, Debanjan Mahata, <i>Puneet Mathur</i>, Rajiv Ratn Shah</span>
-<span class="pub-venue">NAACL Student Research Workshop 2019</span>
-</li>
-<li>
-<span class="pub-title"><a href="https://www.aclweb.org/anthology/N19-3018">Speak Up, Fight Back! Detection of Social Media Disclosures of Sexual Harassment</a></span>
-<span class="pub-authors">Arijit Ghosh Chowdhury, Ramit Sawhney, <i>Puneet Mathur</i>, Rajiv Ratn Shah</span>
-<span class="pub-venue">NAACL Student Research Workshop 2019</span>
-</li>
-<li>
-<span class="pub-title"><a href="http://aclweb.org/anthology/W18-5907">Identification of Emergency Blood Donation Request on Twitter</a></span>
-<span class="pub-authors"><i>Puneet Mathur</i>, Meghna Ayyar, Sahil Chopra, Simra Shahid, Laiba Mehnaz, Rajiv Shah</span>
-<span class="pub-links"><a href="{{ site.baseurl }}/assets/poster_smm4h.pdf">Poster</a></span>
-<span class="pub-venue">SMM4H Workshop, EMNLP 2018</span>
-</li>
-<li>
-<span class="pub-title"><a href="http://aclweb.org/anthology/W18-5118">Did You Offend Me? Classification of Offensive Tweets in Hinglish Language</a></span>
-<span class="pub-authors"><i>Puneet Mathur</i>, Ramit Sawhney, Meghna Ayyar, Rajiv Shah</span>
-<span class="pub-links"><a href="{{ site.baseurl }}/assets/ALW_poster.pdf">Poster</a></span>
-<span class="pub-venue">Abusive Language Workshop (ALW2), EMNLP 2018</span>
-</li>
-<li>
-<span class="pub-title"><a href="http://www.aclweb.org/anthology/W18-6223">Exploring and Learning Suicidal Ideation Connotations on Social Media with Deep Learning</a></span>
-<span class="pub-authors">Ramit Sawhney, Prachi Manchanda, <i>Puneet Mathur</i>, Rajiv Shah, Raj Singh</span>
-<span class="pub-links"><a href="{{ site.baseurl }}/assets/WASSA-2018.pdf">Poster</a></span>
-<span class="pub-venue">WASSA Workshop, EMNLP 2018</span>
-</li>
-<li>
-<span class="pub-title"><a href="http://www.aclweb.org/anthology/W18-3504">Detecting Offensive Tweets in Hindi-English Code-Switched Language</a></span>
-<span class="pub-authors"><i>Puneet Mathur</i>, Rajiv Shah, Ramit Sawhney, Debanjan Mahata</span>
-<span class="pub-links"><a href="https://www.youtube.com/watch?v=MMn2e1iIdck">Video</a></span>
-<span class="pub-venue">Social NLP Workshop, ACL 2018</span>
+<span class="pub-title"><a href="https://ieeexplore.ieee.org/document/9414373">Meta-learning for Low-Resource Speech Emotion Recognition</a></span>
+<span class="pub-authors">Suransh Chopra*, <i>Puneet Mathur*</i>, Ramit Sawhney, Rajiv Ratn Shah</span>
+<span class="pub-venue">ICASSP 2021</span>
 </li>
 </ul>
