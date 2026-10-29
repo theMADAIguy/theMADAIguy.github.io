@@ -1,4 +1,3 @@
-
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
@@ -21,8 +20,7 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-// Wider layout for research content and updates
-$content-width:    950px;
+$content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -41,106 +39,3 @@ $on-laptop:        800px;
         "blog",
         "tables"
 ;
-
-// ==========================================
-// Updates Section
-// Full-height, non-scrollable research timeline
-// ==========================================
-
-.updates-table {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-
-    // Remove fixed-height scrolling
-    height: auto !important;
-    max-height: none !important;
-    min-height: 0;
-    overflow: visible !important;
-    overflow-y: visible !important;
-
-    margin-top: 12px;
-    margin-bottom: 30px;
-}
-
-.updates-table table {
-    width: 100%;
-    max-width: 100%;
-    table-layout: auto;
-    border-collapse: collapse;
-    border-spacing: 0;
-    margin: 0;
-}
-
-.updates-table tr {
-    background: transparent;
-}
-
-.updates-table td {
-    padding: 9px 12px 9px 0;
-    vertical-align: top;
-    line-height: 1.6;
-    border-bottom: 1px solid #eeeeee;
-    background: transparent;
-}
-
-// Date column
-.updates-table td:first-child {
-    width: 110px;
-    min-width: 110px;
-    white-space: nowrap;
-    color: #555;
-}
-
-// Description column
-.updates-table td:last-child {
-    width: auto;
-    overflow-wrap: break-word;
-}
-
-// Subtle hover effect
-.updates-table tr:hover td {
-    background-color: #fafafa;
-}
-
-// No border after last item
-.updates-table tr:last-child td {
-    border-bottom: none;
-}
-
-// Link styling
-.updates-table a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
-// ==========================================
-// Mobile Responsive Layout
-// ==========================================
-
-@include media-query($on-palm) {
-    .updates-table {
-        width: 100%;
-        overflow: visible !important;
-    }
-
-    .updates-table td {
-        padding: 8px 8px 8px 0;
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    .updates-table td:first-child {
-        width: 85px;
-        min-width: 85px;
-        white-space: normal;
-    }
-
-    .updates-table td:last-child {
-        overflow-wrap: anywhere;
-    }
-}
