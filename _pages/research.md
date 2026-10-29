@@ -16,7 +16,7 @@ order: 1
 <li>
 <span class="pub-title"><a href="https://arxiv.org/abs/2610.20172">MultiPartyTurnBench: A Benchmark for Multi-Party End-of-Turn and Interruption Detection</a></span>
 <span class="pub-authors"><i>Puneet Mathur</i>, Dinesh Manocha</span>
-<span class="pub-links"><a href="https://multiparty-turnbench.github.io/" style="color: #0366d6;">[Project Page]</a></span>
+<span class="pub-links"><a href="https://multipartyturnbench.github.io/" style="color: #0366d6;">[Project Page]</a></span>
 <span class="pub-venue">In submission, 2026</span>
 </li>
 <li>
